@@ -1,0 +1,23 @@
+/* Write your CSS here */
+.tap-btn {
+  font-family: 'Roboto';
+  color: #9aa5b1;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.tab-item-container {
+  max-width: 300px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
+}
+.active {
+  border-bottom: 2px solid #0b69ff;
+  color: #2563eb;
+}
