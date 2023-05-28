@@ -296,9 +296,9 @@ const appsList = [
 class AppStore extends Component {
   state = {searchInput: '', activeAppId: tabsList[0].tabId}
 
-  getFilteredApps = () => {
+  getFilteredApps = (searchResult) => {
     const {activeAppId} = this.state
-    const filteredApps = appsList.filter(
+    const filteredApps = searchResult.filter(
       eachAppDetails => eachAppDetails.category === activeAppId,
     )
     return filteredApps
